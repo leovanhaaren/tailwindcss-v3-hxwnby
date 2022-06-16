@@ -1,45 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="h-full">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Welcome to Tailwind v3!</title>
-  
-  <!-- tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com/3.0.23"></script>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Welcome to Tailwind v3!</title>
 
-  <!-- tailwind customizing config -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#da373d',
-          }
-        }
-      }
-    }
-  </script>
-</head>
+    <!-- tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com/3.0.23"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
 
-<body class="flex items-stretch h-full">
-  <aside class="bg-neutral-200 min-w-[200px]">
-    <nav>
-      <ul>
-        <li>
-          <a href="#">Dashboard</a>
-        </li>
-        <li>
-          <a href="#">Activity</a>
-        </li>
-        <li>
-          <a href="#">Settings</a>
-        </li>
-      </ul>
-    </nav>
-  </aside>
-  <div class="bg-neutral-300 w-0.5 hover:bg-neutral-500 hover:cursor-ew-resize hover:w-1" />
-  <main class="bg-gray-500">
-  </main>
-</div>
-</body>
+    <!-- tailwind customizing config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#da373d',
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="flex items-stretch h-full">
+    <aside class="bg-neutral-200 min-w-[200px]">
+      <nav>
+        <ul>
+          <li class="flex m-4 px-4 py-2 bg-white rounded">
+            <i data-feather="home"></i>
+            <a href="#" class="ml-2">Dashboard</a>
+          </li>
+          <li class="flex m-4 px-4 py-2 bg-white rounded">
+            <i data-feather="bell"></i>
+            <a href="#" class="ml-2">Notifications</a>
+          </li>
+          <li class="flex m-4 px-4 py-2 bg-white rounded">
+            <i data-feather="activity"></i>
+            <a href="#" class="ml-2">Activity</a>
+          </li>
+          <li class="flex m-4 px-4 py-2 bg-white rounded">
+            <i data-feather="settings"></i>
+            <a href="#" class="ml-2">Settings</a>
+          </li>
+        </ul>
+        <span>Collections</span>
+        <ul>
+          <li>
+            <a href="#">Dashboard</a>
+          </li>
+          <li>
+            <a href="#">Activity</a>
+          </li>
+          <li>
+            <a href="#">Settings</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div
+      class="
+        bg-neutral-300
+        w-0.5
+        hover:bg-neutral-500 hover:cursor-ew-resize hover:w-1
+      "
+    />
+    <main class="bg-gray-500"></main>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

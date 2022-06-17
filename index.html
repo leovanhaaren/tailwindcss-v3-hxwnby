@@ -18,7 +18,7 @@
         theme: {
           extend: {
             colors: {
-              primary: '#da373d',
+              primary: '#04004D',
             },
           },
         },
@@ -27,48 +27,49 @@
   </head>
 
   <body class="flex items-stretch h-full antialiased">
-    <aside class="bg-neutral-200 min-w-[200px]">
+    <aside class="min-w-[200px]">
       <div class="w-40 p-4 mt-8 mb-12">
-        <img src="https://remindle.io/logo_text.svg" alt="remindle logo"/>
+        <img src="https://remindle.io/logo_text.svg" alt="remindle logo" />
       </div>
       <nav>
-        <ul class="text-gray-700">
-          <li class="flex m-2 px-4 py-2 hover:bg-white rounded">
-            <i data-feather="home" class="w-5"></i>
-            <a href="#" class="ml-2">Dashboard</a>
+        <ul class="text-gray-500">
+          <li class="flex m-2 px-4 py-2 hover:bg-gray-50 rounded">
+            <i data-feather="home" class="w-[1.125rem]"></i>
+            <a href="#" class="ml-4 text-primary">Dashboard</a>
           </li>
-          <li class="flex m-2 px-4 py-2 hover:bg-white rounded">
-            <i data-feather="bell" class="w-5"></i>
-            <a href="#" class="ml-2">Notifications</a>
+          <li class="flex m-2 px-4 py-2 hover:bg-gray-50 rounded">
+            <i data-feather="bell" class="w-[1.125rem]"></i>
+            <a href="#" class="ml-4 text-primary">Notifications</a>
           </li>
-          <li class="flex m-2 px-4 py-2 hover:bg-white rounded">
-            <i data-feather="activity" class="w-5"></i>
-            <a href="#" class="ml-2">Activity</a>
+          <li class="flex m-2 px-4 py-2 hover:bg-gray-50 rounded">
+            <i data-feather="activity" class="w-[1.125rem]"></i>
+            <a href="#" class="ml-4 text-primary">Activity</a>
           </li>
-          <li class="flex m-2 px-4 py-2 hover:bg-white rounded">
-            <i data-feather="settings" class="w-5"></i>
-            <a href="#" class="ml-2">Settings</a>
+          <li class="flex m-2 px-4 py-2 hover:bg-gray-50 rounded">
+            <i data-feather="settings" class="w-[1.125rem]"></i>
+            <a href="#" class="ml-4 text-primary">Settings</a>
           </li>
         </ul>
-        <span class="block mx-6 mt-12 mb-4 text-gray-600">Collections</span>
-        <ul class="ml-4 text-gray-700">
-          <li class="flex m-2 px-4 py-2 hover:bg-white rounded">
-            <a href="#">Private</a>
+        <span class="block mx-6 mt-12 mb-4 text-gray-600 text-sm"
+          >COLLECTIONS</span
+        >
+        <ul class="text-gray-700">
+          <li class="flex m-2 px-4 py-2 hover:bg-gray-50 rounded">
+            <a href="#" class="text-primary">Private</a>
           </li>
-          <li class="flex m-2 px-4 py-2 hover:bg-white rounded">
-            <a href="#"">Public</a>
+          <li class="flex m-2 px-4 py-2 hover:bg-gray-50 rounded">
+            <a href="#" class="text-primary">Public</a>
           </li>
         </ul>
       </nav>
     </aside>
     <div
       class="
-        bg-neutral-300
         w-0.5
         hover:bg-neutral-500 hover:cursor-ew-resize hover:w-1
       "
-    />
-    <main class="bg-gray-500"></main>
+    ></div>
+    <main class="bg-neutral-200 flex-grow"></main>
     <script>
       feather.replace();
     </script>

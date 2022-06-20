@@ -31,7 +31,7 @@
       <div class="max-w-[150px] p-4 mt-8 mb-12 ml-0.5 absolute">
         <img src="https://remindle.io/logo_text.svg" alt="remindle logo" />
       </div>
-      <nav class="absolute mt-32">
+      <nav class="mt-32">
         <ul class="text-gray-500">
           <li class="flex m-2 px-4 py-1 hover:bg-gray-50 rounded">
             <i data-feather="home" class="w-[1.125rem]"></i>
@@ -54,7 +54,7 @@
     </aside>
     <div
       id="resizer"
-      class="w-0.5 hover:bg-neutral-500 hover:cursor-ew-resize hover:w-1"
+      class="w-0.5 hover:bg-neutral-500 hover:cursor-col-resize hover:w-1"
     ></div>
     <main
       class="bg-neutral-200 flex-grow flex justify-center items-start p-12 z-10"
@@ -74,20 +74,20 @@
           (e) => {
             document.removeEventListener('mousemove', resize, false);
 
-            if (
-              e.x < 125
-            ) {
-              sidebar.style.flexBasis = `56px`;
-            } else {
-              sidebar.style.flexBasis = `180px`;
-            }
+            // if (
+            //   e.x < 125
+            // ) {
+            //   sidebar.style.flexBasis = `56px`;
+            // } else {
+            //   sidebar.style.flexBasis = `180px`;
+            // }
           },
           false
         );
       });
 
       function resize(e) {
-        const size = `${e.x}px`;
+        const size = e.x < 250 ? `${e.x}px` : `250px`;
         sidebar.style.flexBasis = size;
       }
     </script>
